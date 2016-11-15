@@ -1,0 +1,47 @@
+{
+  "name": "leeovery/flasher",
+  "type": "library",
+  "description": ":package_description",
+  "keywords": [
+    "Leeovery",
+    "Flasher"
+  ],
+  "homepage": "https://github.com/leeovery/flasher",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lee Overy",
+      "email": "me@leeovery.com",
+      "role": "CTO"
+    }
+  ],
+  "require": {
+    "illuminate/support": "^5.3",
+    "illuminate/contracts": "^5.3",
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "LeeOvery\\Flasher\\": "src"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LeeOvery\\Flasher\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
