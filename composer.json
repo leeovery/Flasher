@@ -1,10 +1,10 @@
 {
   "name": "leeovery/flasher",
   "type": "library",
-  "description": ":package_description",
+  "description": "A Laravel package to flash 1 or more messages to session, with the ability to override previous or future messages, and to cap messages so they only appear once per session, hour, day etc.",
   "keywords": [
-    "Leeovery",
-    "Flasher"
+    "leeovery",
+    "flasher"
   ],
   "homepage": "https://github.com/leeovery/flasher",
   "license": "MIT",

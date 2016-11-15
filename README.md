@@ -12,7 +12,7 @@ Can be used with other frameworks with some edits but comes setup for Laravel se
 Via Composer
 
 ``` bash
-$ composer require leeovery/Flasher
+$ composer require leeovery/flasher
 ```
 
 After adding the package, add the ServiceProvider to the providers array in `config/app.php`
