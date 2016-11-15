@@ -2,28 +2,29 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
 
-Flasher: A package to flash 1 or more messages to session, with ability to override and cap messages.
+A Laravel package to flash 1 or more messages to session, with the ability to override previous or future messages, and to cap messages so they only appear once per session, hour, day etc.
+
+Can be used with other frameworks with some edits but comes setup for Laravel sessions and cache.
 
 ## Install
 
 Via Composer
 
 ``` bash
-$ composer require :vendor/:package_name
+$ composer require leeovery/Flasher
 ```
 
 After adding the package, add the ServiceProvider to the providers array in `config/app.php`
 
 ``` php
-Leeovery\Flasher\FlasherServiceProvider::class,
+LeeOvery\Flasher\FlasherServiceProvider::class,
 ```
 
 You can also publish the config file and view file to make any adjustments as needed:
 
 ```bash
-php artisan vendor:publish --tag="flasher"
+$ php artisan vendor:publish --tag="flasher"
 ```
 
 ### The View
