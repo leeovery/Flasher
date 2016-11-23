@@ -42,7 +42,7 @@ class FlasherServiceProvider extends ServiceProvider
 
     protected function configPath()
     {
-        return __DIR__ . '../config/config.php';
+        return __DIR__ . '/../config/config.php';
     }
 
     /**
