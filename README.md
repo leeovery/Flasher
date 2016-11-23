@@ -24,7 +24,7 @@ LeeOvery\Flasher\FlasherServiceProvider::class,
 You can also publish the config file and view file to make any adjustments as needed:
 
 ```bash
-$ php artisan vendor:publish --tag="flasher"
+$ php artisan vendor:publish --provider="Leeovery\Flasher\FlasherServiceProvider" --tag="config"
 ```
 
 ### The View
@@ -37,6 +37,12 @@ To use the Vue Alert component copy it to your own project, then `import` it int
 import Vue from "vue";
 import Alert from "./components/Alert.vue";
 Vue.component('alert', Alert);
+```
+
+You can also optionally publish the blade file for the flash message output and customise as required:
+
+```bash
+$ php artisan vendor:publish --provider="Leeovery\Flasher\FlasherServiceProvider" --tag="view"
 ```
 
 ## Usage
@@ -114,23 +120,12 @@ As you can see, you can pass an integer to the time-based methods, and this does
 
 The time based 'oncePer' methods use the cache to store a hash of the message data. A Laravel implementation is included using the default cache driver setup in your config.
 
-## Change log
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
-```
 
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
 
-## Security
-
-If you discover any security related issues, please email :author_email instead of using the issue tracker.
 
 ## Credits
 
