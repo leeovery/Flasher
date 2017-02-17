@@ -4,8 +4,8 @@ namespace LeeOvery\Flasher;
 
 use Illuminate\Support\Facades\Facade;
 
-class Flasher extends Facade {
-
+class Flasher extends Facade
+{
     /**
      * Get the binding in the IoC container
      *
@@ -15,5 +15,4 @@ class Flasher extends Facade {
     {
         return 'flasher';
     }
-
 } 

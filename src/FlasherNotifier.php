@@ -111,7 +111,6 @@ class FlasherNotifier
             $this->makeFlashPayload($message, $level);
 
             $this->flashPayload();
-
         }
 
         // add back existing

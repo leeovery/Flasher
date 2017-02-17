@@ -4,7 +4,8 @@ namespace LeeOvery\Flasher;
 
 use Illuminate\Session\Store;
 
-class LaravelSessionStore implements SessionStore {
+class LaravelSessionStore implements SessionStore
+{
 
     /**
      * @var Store
@@ -32,7 +33,7 @@ class LaravelSessionStore implements SessionStore {
 
     /**
      * Flash a message to the session for use in this request.
-     * 
+     *
      * @param $name
      * @param $data
      */

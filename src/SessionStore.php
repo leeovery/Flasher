@@ -2,7 +2,8 @@
 
 namespace LeeOvery\Flasher;
 
-interface SessionStore {
+interface SessionStore
+{
 
     /**
      * Flash a message to the session.
@@ -41,7 +42,7 @@ interface SessionStore {
 
     /**
      * Push array onto key in session.
-     * 
+     *
      * @param $key
      * @param $data
      * @return void

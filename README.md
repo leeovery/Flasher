@@ -3,7 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 
-A Laravel package to flash 1 or more messages to session, with the ability to override previous or future messages, and to cap messages so they only appear once per session, hour, day etc.
+A Laravel package (>=5.3) to flash 1 or more messages to session, with the ability to override previous or future messages, and to cap messages so they only appear once per session, hour, day etc.
 
 Can be used with other frameworks with some edits but comes setup for Laravel sessions and cache.
 
