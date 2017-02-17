@@ -1,6 +1,6 @@
 <?php
 
-if ( ! function_exists('flasher')) {
+if (! function_exists('flasher')) {
 
     /**
      * Arrange for a flash message.
@@ -12,7 +12,7 @@ if ( ! function_exists('flasher')) {
     {
         $flasher = resolve('flasher');
 
-        if ( ! is_null($message)) {
+        if (! is_null($message)) {
             return $flasher->info($message);
         }
 

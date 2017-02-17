@@ -3,7 +3,7 @@
     @foreach(session()->get('flasher') as $flasher)
 
         @php
-        $alertType = config('flasher.class_names.' . $flasher['level']);
+            $alertType = config('flasher.class_names.' . $flasher['level']);
         @endphp
 
         <alert v-cloak
