@@ -27,12 +27,12 @@ class FlasherServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/resources/views' => base_path('resources/views/vendor/flasher'),
-        ], 'view');
+        ], 'flasher-views');
 
         // use this if your package needs a config file
         $this->publishes([
             $this->configPath() => config_path('flasher.php'),
-        ], 'config');
+        ], 'flasher-config');
 
         // use the vendor configuration file as fallback
         $this->mergeConfigFrom(

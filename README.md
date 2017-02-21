@@ -24,7 +24,7 @@ LeeOvery\Flasher\FlasherServiceProvider::class,
 You can also publish the config file and view file to make any adjustments as needed:
 
 ```bash
-$ php artisan vendor:publish --provider="Leeovery\Flasher\FlasherServiceProvider" --tag="config"
+$ php artisan vendor:publish --provider="Leeovery\Flasher\FlasherServiceProvider" --tag="flasher-config"
 ```
 
 ### The View
@@ -42,7 +42,7 @@ Vue.component('alert', Alert);
 You can also optionally publish the blade file for the flash message output and customise as required:
 
 ```bash
-$ php artisan vendor:publish --provider="Leeovery\Flasher\FlasherServiceProvider" --tag="view"
+$ php artisan vendor:publish --provider="Leeovery\Flasher\FlasherServiceProvider" --tag="flasher-views"
 ```
 
 ## Usage
